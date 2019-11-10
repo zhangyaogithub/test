@@ -11,6 +11,7 @@ class User extends Authenticatable
     use Notifiable;
 
     /**
+     * 过滤用户提交字段
      * The attributes that are mass assignable.
      *
      * @var array
@@ -20,6 +21,7 @@ class User extends Authenticatable
     ];
 
     /**
+     * 隐藏实例显示字段
      * The attributes that should be hidden for arrays.
      *
      * @var array
