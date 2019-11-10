@@ -6,6 +6,7 @@
  */
 function get_db_config()
 {
+    //>>判断是不是heroku服务器,是的话用pgsql,否则用mysql
     if (getenv('IS_IN_HEROKU')) {
         $url = parse_url(getenv("DATABASE_URL"));
 
